@@ -18,5 +18,7 @@ namespace Chatter
         public string UserID { get; set; }
         public string MessageBox { get; set; }
         public System.DateTime TimeStamp { get; set; }
+    
+        public virtual AspNetUser AspNetUser { get; set; }
     }
 }

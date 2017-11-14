@@ -181,6 +181,9 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="AspNetUser.cs">
+      <DependentUpon>ChatterModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Chat.cs">
       <DependentUpon>ChatterModel.tt</DependentUpon>
     </Compile>
