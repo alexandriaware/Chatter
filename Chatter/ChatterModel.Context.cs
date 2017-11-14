@@ -26,5 +26,6 @@ namespace Chatter
         }
     
         public virtual DbSet<Chat> Chats { get; set; }
+        public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
     }
 }

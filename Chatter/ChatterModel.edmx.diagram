@@ -6,6 +6,8 @@
     <edmx:Diagrams>
       <Diagram DiagramId="bc7bb958eb614ea4abd0b6d7c0cd7a34" Name="Diagram1">
         <EntityTypeShape EntityType="ChatterModel.Chat" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChatterModel.AspNetUser" Width="1.5" PointX="3.75" PointY="0.75" />
+        <AssociationConnector Association="ChatterModel.FK_Chat_AspNetUsers" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
