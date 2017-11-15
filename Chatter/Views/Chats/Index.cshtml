@@ -9,7 +9,22 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+
+<button id="getsChats" class="btn btn-primary">Get Chats!</button>
+<div id="response"></div>
+@section Scripts{<script>
+    //...Javascript object
+    var jsonTest = { "ID": 1, "userID": 1, "Message": "Hello, World!" };
+    //Now some jQuery
+    $("#response").text(jsonTest.userID);
+    </script>}
+
+
+
+
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.MessageBox)
@@ -42,4 +57,4 @@
     </tr>
 }
 
-</table>
+</table>*@
