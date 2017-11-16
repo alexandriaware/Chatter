@@ -23,15 +23,18 @@
 
         //now some jQuery
         //$("#response").text(jsonTest.children).each(firstName);
-        $.each(jsonTest.children, function () {
-            $.each(this, function (name, value) {
-                $("#response").append("<p>" + value + "</p>")
+        //$.each(jsonTest.children, function () {
+        //    $.each(this, function (name, value) {
+        //        $("#response").append("<p>" + value + "</p>")
 
-            });
-        });
+        //    });
+        //});
 
-        $.get("@Url.Action("testJason", "Chats")", function (response {
-            alert(response);
+        $.get("@Url.Action("testJson", "Chats")", function (serverResponse) {
+            var jsonTest = JSON.parse(serverResponse);
+            console.log(jsonTest);
+            $("#response").text(jsonTest.firstName);
+
         });
 
 

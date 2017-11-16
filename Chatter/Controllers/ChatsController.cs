@@ -21,7 +21,7 @@ namespace Chatter.Controllers
             return View(chats.ToList());
         }
 
-        public JsonResult TestJason()
+        public JsonResult TestJson()
         {
             string jsonTest = "{\"firstName\":\"Bob\", \"lastName\":\"Sauce\", \"children\":[{\"firstName\":\"Barbie\", \"age\": 19}, {\"firstName\":\"Ron\", \"age\": null}]}";
             return Json(jsonTest, JsonRequestBehavior.AllowGet);
