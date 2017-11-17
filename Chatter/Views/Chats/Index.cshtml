@@ -30,11 +30,13 @@
         //    });
         //});
 
-        $.get("@Url.Action("testJson", "Chats")", function (serverResponse) {
-            var jsonTest = JSON.parse(serverResponse);
-            console.log(jsonTest);
-            $("#response").text(jsonTest.firstName);
+        $("#getsChats").click(function () {
+            $.get("@Url.Action("testJson", "Chats")", function (serverResponse) {
+                var jsonTest = JSON.parse(serverResponse);
+                console.log(jsonTest);
+                $("#response").text(jsonTest.firstName);
 
+            });
         });
 
 
